@@ -33,6 +33,10 @@ p {
     transition: color 0.25s ease-out;
   }
 }
+.btn:focus,
+.btn:active:focus {
+  outline: none;
+}
 .fa-stack {
   margin: 0 0 25px;
 }
@@ -130,21 +134,23 @@ p {
 }
 .btn-circle:hover,
 .btn-circle:focus {
-  outline: none;
   color: #ffffff;
   background: rgba(255, 255, 255, 0.1);
 }
-.page-scroll .btn-circle i.animated {
+.btn-circle i.animated {
   -webkit-transition: -webkit-transform .33s;
   transition: transform .33s;
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
 }
-.page-scroll .btn-circle:hover i.animated {
+.btn-circle:hover i.animated {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
+}
+a.btn.btn-circle:active {
+  outline: none;
 }
 .content-section {
   padding-top: 100px;
