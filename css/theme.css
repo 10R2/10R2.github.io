@@ -85,6 +85,7 @@ p {
 .navbar {
   border-bottom: none;
 }
+.navbar _:-o-prefocus,
 .navbar-default .navbar-nav .active a {
   background: transparent;
 }
