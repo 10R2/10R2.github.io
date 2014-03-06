@@ -7,10 +7,6 @@
 
     <link href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/flatly/bootstrap.min.css" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
-    <!--
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet"> 
-    -->
     <link href="css/theme.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -18,6 +14,9 @@
     <!--[if lt IE 9]>
         <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+        <link href="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
+        <link href="js/respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
+        <script src="js/respond.proxy.js"></script>
     <![endif]-->
 </head>
 
@@ -150,9 +149,10 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="cform" id="contact-form">
-                <p id="sendmessage" class="text-info text-center">
-                     Ваше сообщение было отправлено. Спасибо!
-                </p>
+                <div id="sendmessage" class="text-center alert alert-info alert-dismissable">
+                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                    Ваше сообщение было отправлено. Спасибо!
+                </div>
                 <form action="#" role="form" class="contactForm">
                 <!--<form action="contact/contact.php" method="post" role="form" class="contactForm">-->
                   <div class="form-group">
