@@ -163,11 +163,6 @@ p {
     padding-top: 100px;
   }
 }
-@media (min-width: 1200px) {
-  #services .col-lg-offset-0 {
-    margin-left: 12.5%;
-  }
-}
 #sendmessage {
   display: none;
 }
