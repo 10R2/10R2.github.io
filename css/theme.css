@@ -104,7 +104,11 @@ p {
   vertical-align: middle;
 }
 .brand-heading {
-  font-size: 40px;
+  font-size: 72px;
+  color: #ffffff;
+}
+.brand-subtitle {
+  font-size: 28px;
 }
 .intro-text {
   font-size: 18px;
@@ -115,10 +119,13 @@ p {
     padding: 0;
   }
   .brand-heading {
-    font-size: 100px;
+    font-size: 138px;
+  }
+  .brand-subtitle {
+    font-size: 46px;
   }
   .intro-text {
-    font-size: 25px;
+    font-size: 27px;
   }
 }
 .btn-circle {
