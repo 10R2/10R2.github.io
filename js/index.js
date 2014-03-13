@@ -55,3 +55,23 @@ $(function() {
         verticalOffset: 0
     });
 });
+
+// magnificPopup
+$(function() {
+    $('.popup').magnificPopup({ 
+        type: 'image',
+        mainClass: 'magnific-zoom',
+        fixedContentPos: false,
+        closeOnContentClick: true,
+        zoom: {
+            enabled: true,
+            duration: 300,
+            easing: 'ease-in-out', 
+            opener: function(openerElement) {
+                var ret = openerElement.is('img') ? openerElement : openerElement.find('img');
+                console.log(ret.html());
+                return ret;
+            }
+        }
+    });
+});
