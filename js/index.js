@@ -68,9 +68,7 @@ $(function() {
             duration: 300,
             easing: 'ease-in-out', 
             opener: function(openerElement) {
-                var ret = openerElement.is('img') ? openerElement : openerElement.find('img');
-                console.log(ret.html());
-                return ret;
+                return openerElement.is('img') ? openerElement : openerElement.find('img');
             }
         }
     });

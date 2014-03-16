@@ -9,6 +9,7 @@ thumbs.db
 # project specific
 ~*
 *.cmd
+*.php
 
 # npm
 node_modules

@@ -8,7 +8,7 @@ jQuery(document).ready(function ($) {
         var f = $(this).find('.form-group'),
             ferror = false,
             emailExp = /^[^\s()<>@,;:\/]+@\w[\w\.-]+\.[a-z]{2,}$/i,
-            dismiss = ''; // fixme: '<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>';
+            dismiss = ''; // '<button type="button" class="close" aria-hidden="true">&times;</button>';
 
         f.children('input').each(function () { // run all inputs
 
@@ -62,6 +62,7 @@ jQuery(document).ready(function ($) {
                     ? i.attr('data-msg') : '')).show('blind');
             }
         });
+        
         f.children('textarea').each(function () { // run all inputs
 
             var i = $(this); // current input
@@ -117,6 +118,10 @@ jQuery(document).ready(function ($) {
             }
         });
         return false;
+    });
+    
+    $("#sendmessage").click(function () {
+        $(this).removeClass("show");
     });
 
 });
