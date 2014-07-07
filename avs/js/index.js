@@ -30,7 +30,7 @@ $(function() {
 $(function() {
     var c = '.carousel';
     $(c).carousel({interval: 4000})
-        .carousel('pause')
+        // .carousel('pause')
         .on('slide.bs.carousel', function(e) {
             // need to remove .active before changing direction to avoid flickering
             var out_ = $(c + ' .active').removeClass('active'),
